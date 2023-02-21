@@ -1,5 +1,11 @@
 # @cookies-ui/react
 
+## 0.0.5
+
+### Patch Changes
+
+- Fix gray color
+
 ## 0.0.4
 
 ### Patch Changes

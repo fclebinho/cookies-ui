@@ -4,7 +4,7 @@ import { Text } from '../Text'
 export const MultiStepContainer = styled('div', {})
 
 export const Label = styled(Text, {
-  color: '$grey200',
+  color: '$gray200',
 
   defaultVariants: {
     size: 'xs',
@@ -21,12 +21,12 @@ export const Steps = styled('div', {
 export const Step = styled('div', {
   height: '$1',
   borderRadius: '$px',
-  backgroundColor: '$grey600',
+  backgroundColor: '$gray600',
 
   variants: {
     active: {
       true: {
-        backgroundColor: '$grey100',
+        backgroundColor: '$gray100',
       },
     },
   },

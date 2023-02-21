@@ -1,7 +1,7 @@
 import { styled } from '../../styles'
 
 export const TextInputContainer = styled('div', {
-  backgroundColor: '$grey900',
+  backgroundColor: '$gray900',
   borderRadius: '$sm',
   boxSizing: 'border-box',
   border: '2px solid $grey900',
@@ -36,7 +36,7 @@ export const TextInputContainer = styled('div', {
 export const Prefix = styled('span', {
   fontFamily: '$default',
   fontSize: '$sm',
-  color: '$grey400',
+  color: '$gray400',
   fontWeight: 'regular',
 })
 
@@ -58,6 +58,6 @@ export const Input = styled('input', {
   },
 
   '&::placeholder': {
-    color: '$grey400',
+    color: '$gray400',
   },
 })
