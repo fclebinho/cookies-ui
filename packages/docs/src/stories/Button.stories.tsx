@@ -7,21 +7,14 @@ export default {
   component: Button,
   args: {
     children: 'Example',
-    variant: 'text',
     size: 'small',
     disabled: false,
   },
   argTypes: {
-    variant: {
-      options: ['text', 'contained', 'outlined'],
-      control: {
-        type: 'inline-radio',
-      },
-    },
     color: {
       options: ['primary', 'secondary', 'danger'],
       control: {
-        type: 'select',
+        type: 'inline-radio',
       },
     },
     size: {
@@ -39,27 +32,37 @@ export default {
   },
 } as Meta<ButtonProps>
 
-export const Primary: StoryObj<ButtonProps> = {}
-
-export const Secondary: StoryObj<ButtonProps> = {
+export const TextButton: StoryObj<ButtonProps> = {
   args: {
-    color: 'secondary',
-    children: 'Create new',
+    text: true,
+    size: 'medium',
+    color: 'primary',
   },
 }
 
-export const Danger: StoryObj<ButtonProps> = {
+export const ContainedButton: StoryObj<ButtonProps> = {
   args: {
-    color: 'danger',
-    children: 'Cancel',
+    contained: true,
+    size: 'medium',
+    color: 'primary',
+  },
+}
+
+export const OutlinedButton: StoryObj<ButtonProps> = {
+  args: {
+    outlined: true,
+    size: 'medium',
+    color: 'primary',
   },
 }
 
 export const WithIcon: StoryObj<ButtonProps> = {
   args: {
+    size: 'medium',
+    color: 'primary',
     children: (
       <>
-        Próximo passo
+        Example
         <ArrowRight weight="bold" />
       </>
     ),
@@ -68,6 +71,8 @@ export const WithIcon: StoryObj<ButtonProps> = {
 
 export const Disabled: StoryObj<ButtonProps> = {
   args: {
+    size: 'medium',
     disabled: true,
+    color: 'primary',
   },
 }

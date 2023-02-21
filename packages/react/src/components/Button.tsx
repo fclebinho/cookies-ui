@@ -4,11 +4,8 @@ import { styled } from '../styles'
 export const Button = styled('button', {
   all: 'unset',
   borderRadius: '$xs',
-  fontSize: '$sm',
-  // fontWeight: '$medium',
   fontFamily: '$default',
   textAlign: 'center',
-  // minWidth: 120,
   boxSizing: 'border-box',
   padding: '0 $4',
 
@@ -41,7 +38,8 @@ export const Button = styled('button', {
           backgroundColor: '$primary900',
         },
         '&:disabled': {
-          backgroundColor: '$primary300',
+          color: '$gray100',
+          backgroundColor: '$gray400',
         },
       },
       secondary: {
@@ -51,7 +49,8 @@ export const Button = styled('button', {
           backgroundColor: '$secondary900',
         },
         '&:disabled': {
-          backgroundColor: '$secondary300',
+          color: '$gray100',
+          backgroundColor: '$gray400',
         },
       },
       danger: {
@@ -61,18 +60,10 @@ export const Button = styled('button', {
           backgroundColor: '$error900',
         },
         '&:disabled': {
-          backgroundColor: '$error300',
+          color: '$gray100',
+          backgroundColor: '$gray400',
         },
       },
-    },
-    text: {
-      true: {},
-    },
-    contained: {
-      true: {},
-    },
-    outlined: {
-      true: {},
     },
     size: {
       small: {
@@ -92,6 +83,17 @@ export const Button = styled('button', {
         lineHeight: '$base',
       },
     },
+    text: {
+      true: {
+        background: 'transparent',
+      },
+    },
+    contained: {
+      true: {},
+    },
+    outlined: {
+      true: {},
+    },
   },
 
   compoundVariants: [
@@ -99,87 +101,128 @@ export const Button = styled('button', {
       color: 'primary',
       text: true,
       css: {
+        color: '$primary500',
         background: 'transparent',
         border: 0,
+
+        '&:not(:disabled):hover': {
+          color: '$primary900',
+          background: 'transparent',
+        },
+
+        '&:disabled': {
+          color: '$gray400',
+          background: 'transparent',
+        },
+      },
+    },
+    {
+      color: 'primary',
+      outlined: true,
+      css: {
+        color: '$primary500',
+        background: 'transparent',
+        border: '1px solid $primary500',
+
+        '&:not(:disabled):hover': {
+          color: '$primary900',
+          background: 'transparent',
+          border: '1px solid $primary900',
+        },
+
+        '&:disabled': {
+          color: '$gray400',
+          background: 'transparent',
+          border: '1px solid $gray400',
+        },
+      },
+    },
+    {
+      color: 'secondary',
+      text: true,
+      css: {
+        color: '$secondary500',
+        background: 'transparent',
+        border: 0,
+
+        '&:not(:disabled):hover': {
+          color: '$secondary900',
+          background: 'transparent',
+        },
+
+        '&:disabled': {
+          color: '$gray400',
+          background: 'transparent',
+        },
+      },
+    },
+    {
+      color: 'secondary',
+      outlined: true,
+      css: {
+        color: '$secondary500',
+        background: 'transparent',
+        border: '1px solid $secondary500',
+
+        '&:not(:disabled):hover': {
+          color: '$secondary900',
+          background: 'transparent',
+          border: '1px solid $secondary900',
+        },
+
+        '&:disabled': {
+          color: '$gray400',
+          background: 'transparent',
+          border: '1px solid $gray400',
+        },
+      },
+    },
+    {
+      color: 'danger',
+      text: true,
+      css: {
+        color: '$error500',
+        background: 'transparent',
+        border: 0,
+
+        '&:not(:disabled):hover': {
+          color: '$error900',
+          background: 'transparent',
+        },
+
+        '&:disabled': {
+          color: '$gray400',
+          background: 'transparent',
+        },
+      },
+    },
+    {
+      color: 'danger',
+      outlined: true,
+      css: {
+        color: '$error500',
+        background: 'transparent',
+        border: '1px solid $error500',
+
+        '&:not(:disabled):hover': {
+          color: '$error900',
+          background: 'transparent',
+          border: '1px solid $error900',
+        },
+
+        '&:disabled': {
+          color: '$gray400',
+          background: 'transparent',
+          border: '1px solid $gray400',
+        },
       },
     },
   ],
 
-  // variants: {
-  //   variant: {
-  //     text: {
-  //       background: 'transparent',
-  //     },
-  //     contained: {},
-  //     outlined: {
-  //       border: '1px solid #fff',
-  //       background: 'transparent',
-  //     },
-  //   },
-  //   color: {
-  //     primary: {
-  //       color: '$white',
-  //       background: '$primary500',
-  //
-  //       '&:not(:disabled):hover': {
-  //         background: '$primary900',
-  //       },
-  //
-  //       '&:disabled': {
-  //         backgroundColor: '$grey200',
-  //       },
-  //     },
-  //     secondary: {
-  //       color: '$white',
-  //       background: '$secondary500',
-  //
-  //       '&:not(:disabled):hover': {
-  //         background: '$secondary900',
-  //       },
-  //
-  //       '&:disabled': {
-  //         backgroundColor: '$grey200',
-  //       },
-  //     },
-  //     danger: {
-  //       color: '$white',
-  //       background: '$error500',
-  //
-  //       '&:not(:disabled):hover': {
-  //         background: '$error900',
-  //       },
-  //
-  //       '&:disabled': {
-  //         backgroundColor: '$grey200',
-  //       },
-  //     },
-  //   },
-  //
-  //   size: {
-  //     small: {
-  //       fontSize: '$xs',
-  //       padding: '3px 9px',
-  //       lineHeight: '$base',
-  //     },
-  //
-  //     medium: {
-  //       fontSize: '$sm',
-  //       padding: '5px 15px',
-  //       lineHeight: '$base',
-  //     },
-  //     large: {
-  //       fontSize: '$md',
-  //       padding: '7px 21px',
-  //       lineHeight: '$base',
-  //     },
-  //   },
-  // },
-  //
-
   defaultVariants: {
-    text: true,
+    contained: true,
     color: 'primary',
-    size: 'small',
+    size: 'medium',
   },
 })
 

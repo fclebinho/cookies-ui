@@ -1,5 +1,11 @@
 # @cookies-ui/react
 
+## 0.0.4
+
+### Patch Changes
+
+- Ajustes
+
 ## 0.0.3
 
 ### Patch Changes
