@@ -83,23 +83,17 @@ export const Button = styled('button', {
         lineHeight: '$base',
       },
     },
-    text: {
-      true: {
-        background: 'transparent',
-      },
-    },
-    contained: {
-      true: {},
-    },
-    outlined: {
-      true: {},
+    variant: {
+      text: { background: 'transparent' },
+      contained: {},
+      outlined: {},
     },
   },
 
   compoundVariants: [
     {
       color: 'primary',
-      text: true,
+      variant: 'text',
       css: {
         color: '$primary500',
         background: 'transparent',
@@ -118,7 +112,7 @@ export const Button = styled('button', {
     },
     {
       color: 'primary',
-      outlined: true,
+      variant: 'outlined',
       css: {
         color: '$primary500',
         background: 'transparent',
@@ -139,7 +133,7 @@ export const Button = styled('button', {
     },
     {
       color: 'secondary',
-      text: true,
+      variant: 'text',
       css: {
         color: '$secondary500',
         background: 'transparent',
@@ -158,7 +152,7 @@ export const Button = styled('button', {
     },
     {
       color: 'secondary',
-      outlined: true,
+      variant: 'outlined',
       css: {
         color: '$secondary500',
         background: 'transparent',
@@ -179,7 +173,7 @@ export const Button = styled('button', {
     },
     {
       color: 'danger',
-      text: true,
+      variant: 'text',
       css: {
         color: '$error500',
         background: 'transparent',
@@ -198,7 +192,7 @@ export const Button = styled('button', {
     },
     {
       color: 'danger',
-      outlined: true,
+      variant: 'outlined',
       css: {
         color: '$error500',
         background: 'transparent',
@@ -220,7 +214,7 @@ export const Button = styled('button', {
   ],
 
   defaultVariants: {
-    contained: true,
+    variant: 'contained',
     color: 'primary',
     size: 'medium',
   },

@@ -34,7 +34,7 @@ export default {
 
 export const TextButton: StoryObj<ButtonProps> = {
   args: {
-    text: true,
+    variant: 'text',
     size: 'medium',
     color: 'primary',
   },
@@ -42,7 +42,7 @@ export const TextButton: StoryObj<ButtonProps> = {
 
 export const ContainedButton: StoryObj<ButtonProps> = {
   args: {
-    contained: true,
+    variant: 'contained',
     size: 'medium',
     color: 'primary',
   },
@@ -50,7 +50,7 @@ export const ContainedButton: StoryObj<ButtonProps> = {
 
 export const OutlinedButton: StoryObj<ButtonProps> = {
   args: {
-    outlined: true,
+    variant: 'outlined',
     size: 'medium',
     color: 'primary',
   },
@@ -58,6 +58,7 @@ export const OutlinedButton: StoryObj<ButtonProps> = {
 
 export const WithIcon: StoryObj<ButtonProps> = {
   args: {
+    variant: 'contained',
     size: 'medium',
     color: 'primary',
     children: (
@@ -71,6 +72,7 @@ export const WithIcon: StoryObj<ButtonProps> = {
 
 export const Disabled: StoryObj<ButtonProps> = {
   args: {
+    variant: 'contained',
     size: 'medium',
     disabled: true,
     color: 'primary',
