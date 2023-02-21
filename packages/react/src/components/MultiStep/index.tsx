@@ -3,10 +3,14 @@ import { Label, MultiStepContainer, Step, Steps } from './styles'
 export interface MultiStepProps {
   size: number
   currentStep?: number
-  color: 'primary' | 'secondary' | 'danger' | 'default'
+  color?: 'primary' | 'secondary' | 'danger' | 'default'
 }
 
-export function MultiStep({ size, currentStep = 1, color }: MultiStepProps) {
+export function MultiStep({
+  size,
+  currentStep = 1,
+  color = 'default',
+}: MultiStepProps) {
   return (
     <MultiStepContainer>
       <Label>
