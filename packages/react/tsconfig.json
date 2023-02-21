@@ -1,4 +1,4 @@
 {
-  "extends": "@cookie-ui/ts-config/react.json",
+  "extends": "@cookies-ui/ts-config/react.json",
   "include": ["src"]
 }

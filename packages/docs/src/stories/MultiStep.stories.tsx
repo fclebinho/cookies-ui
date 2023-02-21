@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, MultiStep, MultiStepProps } from '@cookie-ui/react'
+import { Box, MultiStep, MultiStepProps } from '@cookies-ui/react'
 
 export default {
   title: 'Form/Multi Step',

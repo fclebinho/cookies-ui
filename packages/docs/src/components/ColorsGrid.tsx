@@ -1,4 +1,4 @@
-import { colors } from '@cookie-ui/tokens'
+import { colors } from '@cookies-ui/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

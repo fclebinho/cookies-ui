@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Heading, HeadingProps } from '@cookie-ui/react'
+import { Heading, HeadingProps } from '@cookies-ui/react'
 
 export default {
   title: 'Typography/Heading',

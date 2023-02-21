@@ -1,6 +1,6 @@
 {
-  "name": "@cookie-ui/react",
-  "version": "1.0.2",
+  "name": "@cookies-ui/react",
+  "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@cookie-ui/eslint-config": "*",
-    "@cookie-ui/tokens": "*",
-    "@cookie-ui/ts-config": "*",
+    "@cookies-ui/eslint-config": "*",
+    "@cookies-ui/tokens": "*",
+    "@cookies-ui/ts-config": "*",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",

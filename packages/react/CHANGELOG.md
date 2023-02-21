@@ -1,4 +1,10 @@
-# @cookie-ui/react
+# @cookies-ui/react
+
+## 0.0.1
+
+### Patch Changes
+
+- Update
 
 ## 1.0.2
 

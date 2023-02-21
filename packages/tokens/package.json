@@ -1,6 +1,6 @@
 {
-  "name": "@cookie-ui/tokens",
-  "version": "1.0.1",
+  "name": "@cookies-ui/tokens",
+  "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@cookie-ui/ts-config": "*",
-    "@cookie-ui/eslint-config": "*",
+    "@cookies-ui/ts-config": "*",
+    "@cookies-ui/eslint-config": "*",
     "tsup": "^6.2.3",
     "typescript": "^4.8.4"
   }

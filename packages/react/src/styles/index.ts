@@ -6,7 +6,7 @@ import {
   lineHeights,
   radii,
   space,
-} from '@cookie-ui/tokens'
+} from '@cookies-ui/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
 export const {

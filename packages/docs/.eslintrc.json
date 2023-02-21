@@ -1,3 +1,3 @@
 {
-  "extends": "@cookie-ui/eslint-config"
+  "extends": "@cookies-ui/eslint-config"
 }

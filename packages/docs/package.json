@@ -1,6 +1,6 @@
 {
-  "name": "@cookie-ui/docs",
-  "version": "1.0.0",
+  "name": "@cookies-ui/docs",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -27,10 +27,10 @@
     "vite": "^3.1.4"
   },
   "dependencies": {
-    "@cookie-ui/eslint-config": "*",
-    "@cookie-ui/react": "*",
-    "@cookie-ui/tokens": "*",
-    "@cookie-ui/ts-config": "*",
+    "@cookies-ui/eslint-config": "*",
+    "@cookies-ui/react": "*",
+    "@cookies-ui/tokens": "*",
+    "@cookies-ui/ts-config": "*",
     "@storybook/addon-a11y": "^6.5.12",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
