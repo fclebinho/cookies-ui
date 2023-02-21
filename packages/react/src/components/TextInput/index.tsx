@@ -4,12 +4,16 @@ import { Input, Prefix, TextInputContainer } from './styles'
 export interface TextInputProps extends ComponentProps<typeof Input> {
   prefix?: string
   color?: 'primary' | 'secondary' | 'danger'
+  sizes?: 'small' | 'medium' | 'large'
 }
 
 export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
-  ({ prefix, color = 'primary', ...props }: TextInputProps, ref) => {
+  (
+    { prefix, sizes = 'medium', color = 'primary', ...props }: TextInputProps,
+    ref,
+  ) => {
     return (
-      <TextInputContainer color={color}>
+      <TextInputContainer size={sizes} color={color}>
         {!!prefix && <Prefix>{prefix}</Prefix>}
         <Input ref={ref} {...props} />
       </TextInputContainer>

@@ -10,11 +10,14 @@ export const TextInputContainer = styled('div', {
 
   variants: {
     size: {
-      sm: {
+      small: {
         padding: '$2 $3',
       },
-      md: {
+      medium: {
         padding: '$3 $4',
+      },
+      large: {
+        padding: '$4 $5',
       },
     },
 
