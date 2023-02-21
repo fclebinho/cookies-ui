@@ -5,9 +5,14 @@ export const Heading = styled('h2', {
   fontFamily: '$default',
   lineHeight: '$shorter',
   margin: 0,
-  color: '$gray100',
 
   variants: {
+    color: {
+      default: { color: '$gray100' },
+      primary: { color: '$primary500' },
+      secondary: { color: '$secondary500' },
+      danger: { color: '$error500' },
+    },
     size: {
       sm: { fontSize: '$xl' },
       md: { fontSize: '$2xl' },
@@ -21,12 +26,14 @@ export const Heading = styled('h2', {
   },
 
   defaultVariants: {
+    color: 'default',
     size: 'md',
   },
 })
 
 export interface HeadingProps extends ComponentProps<typeof Heading> {
   as?: ElementType
+  color?: 'default' | 'primary' | 'secondary' | 'danger'
 }
 
 Heading.displayName = 'Heading'

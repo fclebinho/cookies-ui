@@ -38,6 +38,7 @@ export const Text = styled('p', {
 
 export interface TextProps extends ComponentProps<typeof Text> {
   as?: ElementType
+  color?: 'default' | 'primary' | 'secondary' | 'danger'
 }
 
 Text.displayName = 'Text'

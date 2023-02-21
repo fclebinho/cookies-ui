@@ -7,8 +7,15 @@ export default {
   args: {
     children: 'Custom title',
     size: 'md',
+    color: 'default',
   },
   argTypes: {
+    color: {
+      options: ['default', 'primary', 'secondary', 'danger'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
     size: {
       options: ['sm', 'md', 'lg', '2xl', '4xl', '5xl', '6xl'],
       control: {
