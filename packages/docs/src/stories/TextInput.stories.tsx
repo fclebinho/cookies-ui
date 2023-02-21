@@ -4,7 +4,23 @@ import { Box, Text, TextInput, TextInputProps } from '@cookies-ui/react'
 export default {
   title: 'Form/Text Input',
   component: TextInput,
-  args: {},
+  args: {
+    color: 'primary',
+    disabled: false,
+  },
+  argTypes: {
+    color: {
+      options: ['primary', 'secondary', 'danger'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+  },
   decorators: [
     (Story) => {
       return (
@@ -23,12 +39,6 @@ export default {
 export const Primary: StoryObj<TextInputProps> = {
   args: {
     placeholder: 'Type your name',
-  },
-}
-
-export const Disabled: StoryObj<TextInputProps> = {
-  args: {
-    disabled: true,
   },
 }
 

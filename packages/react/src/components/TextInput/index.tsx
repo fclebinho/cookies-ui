@@ -3,12 +3,13 @@ import { Input, Prefix, TextInputContainer } from './styles'
 
 export interface TextInputProps extends ComponentProps<typeof Input> {
   prefix?: string
+  color: 'primary' | 'secondary' | 'danger'
 }
 
 export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
-  ({ prefix, ...props }: TextInputProps, ref) => {
+  ({ prefix, color, ...props }: TextInputProps, ref) => {
     return (
-      <TextInputContainer>
+      <TextInputContainer color={color}>
         {!!prefix && <Prefix>{prefix}</Prefix>}
         <Input ref={ref} {...props} />
       </TextInputContainer>

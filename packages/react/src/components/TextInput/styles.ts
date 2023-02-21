@@ -4,7 +4,7 @@ export const TextInputContainer = styled('div', {
   backgroundColor: '$gray900',
   borderRadius: '$sm',
   boxSizing: 'border-box',
-  border: '2px solid $grey900',
+  border: '2px solid $gray900',
   display: 'flex',
   alignItems: 'center',
 
@@ -17,10 +17,24 @@ export const TextInputContainer = styled('div', {
         padding: '$3 $4',
       },
     },
-  },
 
-  '&:has(input:focus)': {
-    borderColor: '$ignite300',
+    color: {
+      primary: {
+        '&:has(input:focus)': {
+          borderColor: '$primary300',
+        },
+      },
+      secondary: {
+        '&:has(input:focus)': {
+          borderColor: '$secondary300',
+        },
+      },
+      danger: {
+        '&:has(input:focus)': {
+          borderColor: '$error300',
+        },
+      },
+    },
   },
 
   '&:has(input:disabled)': {
@@ -30,6 +44,7 @@ export const TextInputContainer = styled('div', {
 
   defaultVariants: {
     size: 'md',
+    color: 'primary',
   },
 })
 

@@ -1,5 +1,5 @@
 import * as Checkbox from '@radix-ui/react-checkbox'
-import { styled, keyframes } from '../../styles'
+import { styled } from '../../styles'
 
 export const CheckboxContainer = styled(Checkbox.Root, {
   all: 'unset',
@@ -14,32 +14,60 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  border: '2px solid $grey900',
+  border: '2px solid $gray900',
 
-  '&[data-state="checked"]': {
-    backgroundColor: '$ignite300',
+  variants: {
+    color: {
+      primary: {
+        '&[data-state="checked"]': {
+          backgroundColor: '$primary500',
+        },
+
+        '&:focus, &[data-state="checked"]': {
+          border: '2px solid $primary500',
+        },
+
+        '&:disabled': {
+          backgroundColor: '$gray400',
+          border: '2px solid $gray400',
+          cursor: 'not-allowed',
+        },
+      },
+      secondary: {
+        '&[data-state="checked"]': {
+          backgroundColor: '$secondary500',
+        },
+
+        '&:focus, &[data-state="checked"]': {
+          border: '2px solid $secondary500',
+        },
+
+        '&:disabled': {
+          backgroundColor: '$gray400',
+          border: '2px solid $gray400',
+          cursor: 'not-allowed',
+        },
+      },
+      danger: {
+        '&[data-state="checked"]': {
+          backgroundColor: '$error500',
+        },
+
+        '&:focus, &[data-state="checked"]': {
+          border: '2px solid $error500',
+        },
+
+        '&:disabled': {
+          backgroundColor: '$gray400',
+          border: '2px solid $gray400',
+          cursor: 'not-allowed',
+        },
+      },
+    },
   },
 
-  '&:focus, &[data-state="checked"]': {
-    border: '2px solid $ignite300',
-  },
-})
-
-const slideIn = keyframes({
-  from: {
-    transform: 'translateY(-100%)',
-  },
-  to: {
-    transform: 'translateY(0)',
-  },
-})
-
-const slideOut = keyframes({
-  from: {
-    transform: 'translateY(0)',
-  },
-  to: {
-    transform: 'translateY(-100%)',
+  defaultVariants: {
+    color: 'primary',
   },
 })
 
@@ -47,12 +75,4 @@ export const CheckboxIndicator = styled(Checkbox.Indicator, {
   color: '$white',
   width: '$4',
   height: '$4',
-
-  '&[data-state="checked"]': {
-    animation: `${slideIn} 200ms ease-out`,
-  },
-
-  '&[data-state="unchecked"]': {
-    animation: `${slideOut} 200ms ease-out`,
-  },
 })
