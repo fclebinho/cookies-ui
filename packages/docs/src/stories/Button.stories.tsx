@@ -21,7 +21,7 @@ export default {
     color: {
       options: ['primary', 'secondary', 'danger'],
       control: {
-        type: 'inline-radio',
+        type: 'select',
       },
     },
     size: {

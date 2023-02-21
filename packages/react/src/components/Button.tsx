@@ -33,55 +33,47 @@ export const Button = styled('button', {
   },
 
   variants: {
-    variant: {
-      text: {
-        background: 'transparent',
-      },
-      contained: {},
-      outlined: {
-        border: '1px solid #fff',
-        background: 'transparent',
-      },
-    },
     color: {
       primary: {
-        color: '$white',
-        background: '$primary500',
-
+        backgroundColor: '$primary500',
+        color: 'white',
         '&:not(:disabled):hover': {
-          background: '$primary900',
+          backgroundColor: '$primary900',
         },
-
         '&:disabled': {
-          backgroundColor: '$grey200',
+          backgroundColor: '$primary300',
         },
       },
       secondary: {
-        color: '$white',
-        background: '$secondary500',
-
+        backgroundColor: '$secondary500',
+        color: 'white',
         '&:not(:disabled):hover': {
-          background: '$secondary900',
+          backgroundColor: '$secondary900',
         },
-
         '&:disabled': {
-          backgroundColor: '$grey200',
+          backgroundColor: '$secondary300',
         },
       },
       danger: {
-        color: '$white',
-        background: '$error500',
-
+        backgroundColor: '$error500',
+        color: 'white',
         '&:not(:disabled):hover': {
-          background: '$error900',
+          backgroundColor: '$error900',
         },
-
         '&:disabled': {
-          backgroundColor: '$grey200',
+          backgroundColor: '$error300',
         },
       },
     },
-
+    text: {
+      true: {},
+    },
+    contained: {
+      true: {},
+    },
+    outlined: {
+      true: {},
+    },
     size: {
       small: {
         fontSize: '$xs',
@@ -102,8 +94,90 @@ export const Button = styled('button', {
     },
   },
 
+  compoundVariants: [
+    {
+      color: 'primary',
+      text: true,
+      css: {
+        background: 'transparent',
+        border: 0,
+      },
+    },
+  ],
+
+  // variants: {
+  //   variant: {
+  //     text: {
+  //       background: 'transparent',
+  //     },
+  //     contained: {},
+  //     outlined: {
+  //       border: '1px solid #fff',
+  //       background: 'transparent',
+  //     },
+  //   },
+  //   color: {
+  //     primary: {
+  //       color: '$white',
+  //       background: '$primary500',
+  //
+  //       '&:not(:disabled):hover': {
+  //         background: '$primary900',
+  //       },
+  //
+  //       '&:disabled': {
+  //         backgroundColor: '$grey200',
+  //       },
+  //     },
+  //     secondary: {
+  //       color: '$white',
+  //       background: '$secondary500',
+  //
+  //       '&:not(:disabled):hover': {
+  //         background: '$secondary900',
+  //       },
+  //
+  //       '&:disabled': {
+  //         backgroundColor: '$grey200',
+  //       },
+  //     },
+  //     danger: {
+  //       color: '$white',
+  //       background: '$error500',
+  //
+  //       '&:not(:disabled):hover': {
+  //         background: '$error900',
+  //       },
+  //
+  //       '&:disabled': {
+  //         backgroundColor: '$grey200',
+  //       },
+  //     },
+  //   },
+  //
+  //   size: {
+  //     small: {
+  //       fontSize: '$xs',
+  //       padding: '3px 9px',
+  //       lineHeight: '$base',
+  //     },
+  //
+  //     medium: {
+  //       fontSize: '$sm',
+  //       padding: '5px 15px',
+  //       lineHeight: '$base',
+  //     },
+  //     large: {
+  //       fontSize: '$md',
+  //       padding: '7px 21px',
+  //       lineHeight: '$base',
+  //     },
+  //   },
+  // },
+  //
+
   defaultVariants: {
-    variant: 'text',
+    text: true,
     color: 'primary',
     size: 'small',
   },
