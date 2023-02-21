@@ -6,20 +6,26 @@ export default {
   title: 'Form/Button',
   component: Button,
   args: {
-    children: 'Send',
-    variant: 'primary',
-    size: 'md',
+    children: 'Example',
+    variant: 'text',
+    size: 'small',
     disabled: false,
   },
   argTypes: {
     variant: {
-      options: ['primary', 'secondary', 'tertiary'],
+      options: ['text', 'contained', 'outlined'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    color: {
+      options: ['primary', 'secondary', 'danger'],
       control: {
         type: 'inline-radio',
       },
     },
     size: {
-      options: ['sm', 'md'],
+      options: ['small', 'medium', 'large'],
       control: {
         type: 'inline-radio',
       },
@@ -37,21 +43,15 @@ export const Primary: StoryObj<ButtonProps> = {}
 
 export const Secondary: StoryObj<ButtonProps> = {
   args: {
-    variant: 'secondary',
+    color: 'secondary',
     children: 'Create new',
   },
 }
 
-export const Tertiary: StoryObj<ButtonProps> = {
+export const Danger: StoryObj<ButtonProps> = {
   args: {
-    variant: 'tertiary',
+    color: 'danger',
     children: 'Cancel',
-  },
-}
-
-export const Small: StoryObj<ButtonProps> = {
-  args: {
-    size: 'sm',
   },
 }
 
