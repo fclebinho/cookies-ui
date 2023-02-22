@@ -1,5 +1,11 @@
 # @cookies-ui/react
 
+## 0.0.13
+
+### Patch Changes
+
+- Add sizes to Aavatar
+
 ## 0.0.12
 
 ### Patch Changes

@@ -5,10 +5,16 @@ export default {
   title: 'Data display/Avatar',
   component: Avatar,
   args: {
-    src: 'https://github.com/diego3g.png',
-    alt: 'Diego Fernandes',
+    alt: 'Example',
+    size: 'medium',
   },
   argTypes: {
+    size: {
+      options: ['small', 'medium', 'large'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
     src: {
       control: {
         type: 'text',

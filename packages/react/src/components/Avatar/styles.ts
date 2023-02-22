@@ -4,9 +4,20 @@ import { styled } from '../../styles'
 export const AvatarContainer = styled(Avatar.Root, {
   borderRadius: '$full',
   display: 'inline-block',
-  width: '$16',
-  height: '$16',
+
   overflow: 'hidden',
+
+  variants: {
+    size: {
+      small: { width: '$8', height: '$8' },
+      medium: { width: '$12', height: '$12' },
+      large: { width: '$16', height: '$16' },
+    },
+  },
+
+  defaultVariants: {
+    size: 'medium',
+  },
 })
 
 export const AvatarImage = styled(Avatar.Image, {
