@@ -10,7 +10,7 @@ export const paletteDark = {
   actionDisabledBackground: 'rgba(255, 255, 255, 0.12)',
 
   backgroundDefault: '#121212',
-  backgroundPaper: 'rgba(255, 255, 255, 0.08)',
+  backgroundPaper: 'rgba(255, 255, 255, 0.06)',
 
   divider: 'rgba(255, 255, 255, 0.12)',
 }

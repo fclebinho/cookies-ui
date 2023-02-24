@@ -4,7 +4,7 @@ export const TextInputContainer = styled('div', {
   backgroundColor: '$backgroundDefault',
   borderRadius: '$sm',
   boxSizing: 'border-box',
-  border: '2px solid $divider',
+  border: '2px solid $backgroundDefault',
   display: 'flex',
   alignItems: 'center',
 
@@ -76,6 +76,6 @@ export const Input = styled('input', {
   },
 
   '&::placeholder': {
-    color: '$textSecondary',
+    color: '$actionDisabled',
   },
 })
