@@ -1,5 +1,11 @@
 # @cookies-ui/react
 
+## 0.0.16
+
+### Patch Changes
+
+- New version tokens
+
 ## 0.0.15
 
 ### Patch Changes

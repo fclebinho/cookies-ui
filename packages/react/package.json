@@ -1,6 +1,6 @@
 {
   "name": "@cookies-ui/react",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
