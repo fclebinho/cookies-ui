@@ -10,6 +10,8 @@ import {
 } from '@cookies-ui/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
+export { lightColors, darkColors } from '@cookies-ui/tokens'
+
 export const {
   styled,
   css,
