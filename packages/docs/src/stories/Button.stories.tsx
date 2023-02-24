@@ -32,7 +32,7 @@ export default {
   },
 } as Meta<ButtonProps>
 
-export const TextButton: StoryObj<ButtonProps> = {
+export const Text: StoryObj<ButtonProps> = {
   args: {
     variant: 'text',
     size: 'medium',
@@ -40,7 +40,7 @@ export const TextButton: StoryObj<ButtonProps> = {
   },
 }
 
-export const ContainedButton: StoryObj<ButtonProps> = {
+export const Contained: StoryObj<ButtonProps> = {
   args: {
     variant: 'contained',
     size: 'medium',
@@ -48,7 +48,7 @@ export const ContainedButton: StoryObj<ButtonProps> = {
   },
 }
 
-export const OutlinedButton: StoryObj<ButtonProps> = {
+export const Outlined: StoryObj<ButtonProps> = {
   args: {
     variant: 'outlined',
     size: 'medium',
@@ -70,7 +70,25 @@ export const WithIcon: StoryObj<ButtonProps> = {
   },
 }
 
-export const Disabled: StoryObj<ButtonProps> = {
+export const DisabledText: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'text',
+    size: 'medium',
+    disabled: true,
+    color: 'primary',
+  },
+}
+
+export const DisabledOutlined: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'outlined',
+    size: 'medium',
+    disabled: true,
+    color: 'primary',
+  },
+}
+
+export const DisabledContained: StoryObj<ButtonProps> = {
   args: {
     variant: 'contained',
     size: 'medium',

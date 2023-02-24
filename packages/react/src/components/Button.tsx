@@ -26,7 +26,7 @@ export const Button = styled('button', {
   },
 
   '&:focus': {
-    boxShadow: '0 0 0 2px $colors$gray100',
+    boxShadow: '0 0 0 2px $colors$actionHover',
   },
 
   variants: {
@@ -38,8 +38,8 @@ export const Button = styled('button', {
           backgroundColor: '$primary900',
         },
         '&:disabled': {
-          color: '$gray100',
-          backgroundColor: '$gray400',
+          color: '$textDisabled',
+          backgroundColor: '$actionDisabled',
         },
       },
       secondary: {
@@ -49,8 +49,8 @@ export const Button = styled('button', {
           backgroundColor: '$secondary900',
         },
         '&:disabled': {
-          color: '$gray100',
-          backgroundColor: '$gray400',
+          color: '$textDisabled',
+          backgroundColor: '$actionDisabled',
         },
       },
       danger: {
@@ -60,8 +60,8 @@ export const Button = styled('button', {
           backgroundColor: '$error900',
         },
         '&:disabled': {
-          color: '$gray100',
-          backgroundColor: '$gray400',
+          color: '$textDisabled',
+          backgroundColor: '$actionDisabled',
         },
       },
     },
@@ -105,7 +105,7 @@ export const Button = styled('button', {
         },
 
         '&:disabled': {
-          color: '$gray400',
+          color: '$textDisabled',
           background: 'transparent',
         },
       },
@@ -125,9 +125,9 @@ export const Button = styled('button', {
         },
 
         '&:disabled': {
-          color: '$gray400',
+          color: '$textDisabled',
           background: 'transparent',
-          border: '1px solid $gray400',
+          border: '1px solid $actionDisabled',
         },
       },
     },
@@ -145,7 +145,7 @@ export const Button = styled('button', {
         },
 
         '&:disabled': {
-          color: '$gray400',
+          color: '$textDisabled',
           background: 'transparent',
         },
       },
@@ -165,9 +165,9 @@ export const Button = styled('button', {
         },
 
         '&:disabled': {
-          color: '$gray400',
+          color: '$textDisabled',
           background: 'transparent',
-          border: '1px solid $gray400',
+          border: '1px solid $actionDisabled',
         },
       },
     },

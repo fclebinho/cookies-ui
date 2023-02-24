@@ -1,4 +1,38 @@
-export const colors = {
+export const paletteDark = {
+  textPrimary: '	#fff',
+  textSecondary: 'rgba(255, 255, 255, 0.7)',
+  textDisabled: 'rgba(255, 255, 255, 0.5)',
+
+  actionActive: '	#fff',
+  actionHover: 'rgba(255, 255, 255, 0.08)',
+  actionSelected: 'rgba(255, 255, 255, 0.16)',
+  actionDisabled: 'rgba(255, 255, 255, 0.3)',
+  actionDisabledBackground: 'rgba(255, 255, 255, 0.12)',
+
+  backgroundDefault: '#121212',
+  backgroundPaper: 'rgba(255, 255, 255, 0.08)',
+
+  divider: 'rgba(255, 255, 255, 0.12)',
+}
+
+export const paletteLight = {
+  textPrimary: 'rgba(0, 0, 0, 0.87)',
+  textSecondary: 'rgba(0, 0, 0, 0.6)',
+  textDisabled: 'rgba(0, 0, 0, 0.38)',
+
+  actionActive: 'rgba(0, 0, 0, 0.54)',
+  actionHover: 'rgba(0, 0, 0, 0.04)',
+  actionSelected: 'rgba(0, 0, 0, 0.08)',
+  actionDisabled: 'rgba(0, 0, 0, 0.26)',
+  actionDisabledBackground: 'rgba(0, 0, 0, 0.12)',
+
+  backgroundDefault: '#fff',
+  backgroundPaper: 'rgba(0, 0, 0, 0.04)',
+
+  divider: 'rgba(0, 0, 0, 0.12)',
+}
+
+export const palette = {
   black: '#000',
   white: '#fff',
 
@@ -23,3 +57,7 @@ export const colors = {
   gray800: '#202024',
   gray900: '#121214',
 }
+
+export const lightColors = { ...palette, ...paletteLight }
+
+export const darkColors = { ...palette, ...paletteDark }

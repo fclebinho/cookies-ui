@@ -8,7 +8,7 @@ export const Heading = styled('h2', {
 
   variants: {
     color: {
-      default: { color: '$gray100' },
+      default: { color: '$textPrimary' },
       primary: { color: '$primary500' },
       secondary: { color: '$secondary500' },
       danger: { color: '$error500' },

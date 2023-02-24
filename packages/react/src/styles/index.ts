@@ -1,5 +1,6 @@
 import {
-  colors,
+  lightColors,
+  darkColors,
   fonts,
   fontSizes,
   fontWeights,
@@ -26,7 +27,7 @@ export const {
   },
 
   theme: {
-    colors,
+    colors: lightColors,
     fontSizes,
     fontWeights,
     fonts,
@@ -34,4 +35,8 @@ export const {
     radii,
     space,
   },
+})
+
+export const darkTheme = createTheme({
+  colors: darkColors,
 })
