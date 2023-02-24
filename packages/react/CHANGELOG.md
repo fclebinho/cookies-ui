@@ -1,5 +1,11 @@
 # @cookies-ui/react
 
+## 0.0.18
+
+### Patch Changes
+
+- Alter color
+
 ## 0.0.17
 
 ### Patch Changes

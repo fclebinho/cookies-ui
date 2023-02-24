@@ -1,5 +1,11 @@
 # @cookies-ui/tokens
 
+## 0.0.8
+
+### Patch Changes
+
+- Alter color
+
 ## 0.0.7
 
 ### Patch Changes
