@@ -1,5 +1,11 @@
 # @cookies-ui/react
 
+## 0.0.19
+
+### Patch Changes
+
+- Alter sizes buttons
+
 ## 0.0.18
 
 ### Patch Changes

@@ -70,6 +70,30 @@ export const WithIcon: StoryObj<ButtonProps> = {
   },
 }
 
+export const SmallText: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'contained',
+    size: 'small',
+    color: 'primary',
+  },
+}
+
+export const MediumOutlined: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'contained',
+    size: 'medium',
+    color: 'primary',
+  },
+}
+
+export const LargeContained: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'contained',
+    size: 'large',
+    color: 'primary',
+  },
+}
+
 export const DisabledText: StoryObj<ButtonProps> = {
   args: {
     variant: 'text',

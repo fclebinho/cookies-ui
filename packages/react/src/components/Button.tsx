@@ -67,18 +67,18 @@ export const Button = styled('button', {
     },
     size: {
       small: {
-        fontSize: '$xs',
+        fontSize: '$sm',
         padding: '3px 9px',
         lineHeight: '$base',
       },
 
       medium: {
-        fontSize: '$sm',
+        fontSize: '$md',
         padding: '5px 15px',
         lineHeight: '$base',
       },
       large: {
-        fontSize: '$md',
+        fontSize: '$lg',
         padding: '7px 21px',
         lineHeight: '$base',
       },

@@ -1,5 +1,11 @@
 # @cookies-ui/tokens
 
+## 0.0.9
+
+### Patch Changes
+
+- Alter sizes buttons
+
 ## 0.0.8
 
 ### Patch Changes
