@@ -60,7 +60,7 @@ export const Prefix = styled('span', {
 
 export const Input = styled('input', {
   fontFamily: '$default',
-  fontSize: '$sm',
+  fontSize: '$md',
   color: '$textPrimary',
   fontWeight: 'regular',
   background: 'transparent',

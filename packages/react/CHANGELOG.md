@@ -1,5 +1,11 @@
 # @cookies-ui/react
 
+## 0.0.20
+
+### Patch Changes
+
+- Alter size font of input-text
+
 ## 0.0.19
 
 ### Patch Changes
