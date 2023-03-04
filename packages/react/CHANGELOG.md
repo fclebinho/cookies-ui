@@ -1,5 +1,11 @@
 # @cookies-ui/react
 
+## 0.0.21
+
+### Patch Changes
+
+- Add media sizes
+
 ## 0.0.20
 
 ### Patch Changes

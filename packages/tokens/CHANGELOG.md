@@ -1,5 +1,11 @@
 # @cookies-ui/tokens
 
+## 0.0.10
+
+### Patch Changes
+
+- Add media sizes
+
 ## 0.0.9
 
 ### Patch Changes

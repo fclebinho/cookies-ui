@@ -7,6 +7,7 @@ import {
   lineHeights,
   radii,
   space,
+  media,
 } from '@cookies-ui/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
@@ -37,6 +38,8 @@ export const {
     radii,
     space,
   },
+
+  media,
 })
 
 export const darkTheme = createTheme({
